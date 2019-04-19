@@ -14,7 +14,7 @@ Path inputPath = null;
     String hashVal = getHash(binaryFilePathBytes, dgst);
 
 
-/*
+	/*
 	 * Usage: The function will provide support String value to HEX Buffered String Support.
 	 * For Example: input : 00 00 00 a0 will be converted to b'\x00\x00\x00x\a0' in output file.
 	 * */
@@ -32,7 +32,7 @@ Path inputPath = null;
 		return inputByte;
 	}
 
-/*
+	/*
 	 * Usage: The function will provide support for ASCII to HEX conversion.
 	 * For Example: input = TEST will result in output = 54 45 53 54
 	 * For Example: input = test will result in output = 74 65 73 74
@@ -48,7 +48,7 @@ Path inputPath = null;
 		return hexOutput.toString();
 	}
 
-/*
+	/*
 	 * Usage: The function will provide the digest value for given data in Byte format
 	 * The output will be in hexstring. e.g.: 8774a25d2ff424c9cc919db20c47f691317cea4b8776cb2b73c81794bd54f19b
 	 * The function also has a capability to return a base64 encoded digest. Comment/Uncomment the base64 encoding line per the need of the use case.
@@ -75,7 +75,7 @@ Path inputPath = null;
 	}
 
 
-/*
+	/*
 	 * Usage : The function will provide the HEX value of a given input in the form of applicable buffer size.
 	 * paddingAtBottom variable will instruct the program on where to append the padding characters(0x00)
 	 * For Example - hexValue=0b, paddingAtBottom = false & bufferSize = 4 will return ==> 00 00 00 0b
